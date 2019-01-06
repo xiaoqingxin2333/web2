@@ -293,7 +293,7 @@
 	}
 	.nav>li{
 		float: left;
-		width: 20px;
+			width: 20px;
 		height: 20px;
 		background: #fff;
 		cursor: pointer;
@@ -579,7 +579,7 @@
 		margin-left:12px;
 	}
 	#img{
-		margin-left:1z
+		margin-left:12px;
 	</style>
 </head>
 <body>
@@ -790,7 +790,7 @@
 						<a href="" class="p2">
 							<img src="imgs/3(1).png">
 						</a>
-						<a href="" class="p2">
+						<a href="work详情页.html" class="p2">
 							<img src="imgs/qqq.png">
 						</a>
 					</div>
@@ -982,6 +982,71 @@
 				}
 			}
 		}
+		function animate(obj,json,callback){
+			clearInterval(obj.timer);
+			obj.timer = setInterval(//计时器
+				function(){
+					var isStop = true;
+					for (var attr in json) {
+						if(attr=='opacity'){
+							var now = parseInt(getStyle(obj,attr)*100);
+						}
+						else{
+							var now = parseInt(getStyle(obj,attr));
+						}
+						var speed = (json[attr]-now)/5;
+						speed=speed>0?Math.ceil(speed):Math.floor(speed);
+						if(attr=='opacity'){
+							obj.style[attr]=(now+speed)/100;
+						}
+						else{
+							obj.style[attr] = now+speed+'px';
+						}
+						var current = now + speed;
+						if(json[attr]!==current){
+							isStop = false;
+						}
+					}
+					if(isStop){
+						clearInterval(obj.timer);
+						callback&&callback();
+					}		
+				},1);
+			}
+			function animate1(obj,json){
+				clearInterval(obj.timer);
+				obj.timer = setInterval(//计时器
+					function(){
+						var isStop = true;
+						for (var attr in json) {
+							if(attr=='opacity'){
+								var now = parseInt(getStyle(obj,attr)*100);
+							}
+							else{
+								var now = parseInt(getStyle(obj,attr));
+							}
+							var speed = (json[attr]-now)/5;
+							speed=speed>0?Math.ceil(speed):Math.floor(speed);
+							if(attr=='opacity'){
+								obj.style[attr]=(now+speed)/100;
+							}
+							else{
+								obj.style[attr] = now+speed+'px';
+							}
+						var current = now + speed;
+						if(json[attr]!==current){
+					isStop = false;
+					}
+				}
+			},35);
+		}
+		function getStyle(obj,style) {
+			if(getComputedStyle(obj)){
+				return getComputedStyle(obj)[style];
+			}else{
+				obj.currentStyle[style];
+			}
+		}
 		var slider = document.getElementById('slider');
 		var index = 1;
 		function next(){
@@ -1005,7 +1070,7 @@
 			});
 		}
 		var timer = setInterval(next,3000);
-		var p1 = document.getElementById('p1');
+		var p1= document.getElementById('p1');
 		var left = document.getElementById('left');
 		var right = document.getElementById('right');
 		p1.onmouseover = function(){

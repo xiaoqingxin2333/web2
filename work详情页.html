@@ -18,6 +18,7 @@
 		height: 122px; 
 		margin: 0 auto;
 		z-index: 99;
+		background-color: #fff;
 	}
 	#one{
 		width: 1180px;
@@ -120,12 +121,65 @@
 	#one1{
 		color: #ebe7e7;
 	}
-	#two{
-		color: #f8f7f6;
-		width: 100%
-		height: 817px;
+	#black{
+		width: 100%;
+		height: 40px;
+		background-color: #000;
 	}
-	#two1{
+	#black1{
+		width: 1180px;
+		margin: 0 auto;
+	}
+	#bone{
+		width: 96px;
+		height: 40px;
+		color: #fff;
+		background-color: #fe0d4a;
+		text-align: center;
+		line-height: 40px;
+		float: left;
+	}
+	#btwo{
+		height: 13px;
+		color: #fff;
+		margin-right: 59px;
+		text-align: center;
+		line-height: 40px;
+		float: left;
+	}
+	#two{
+		background-color: #f8f7f6;
+		width: 100%;
+		height: 767px;
+	}
+	#two01{
+		width: 1180px;
+		height: 703px;
+		margin: 0 auto;
+	}
+	#two01 a{
+		font-size: 12px;
+		line-height: 36px;
+	}
+	#two2{
+		height: 620px;
+		width: 1180px;
+		margin: 0 auto;
+		background-color: #fff;
+		float: left;
+	}
+	#two21{
+		width: 410px;
+		height: 410px;
+		border: 1px solid #d0cdc7;
+		margin-left: 20px;
+	}
+	#two3{
+		width: 995px;
+		height: 632px;
+		float: left;
+	}
+	#photo{
 		width: 1180px;
 		margin: 0 auto;
 	}
@@ -235,70 +289,97 @@
 <body>
 	<div class="cover">
 		<div id="one">
-		<a style="color: #9a9791;font-size: 12px;">帮5买，享帮帮</a>
-		<div id="one00">
-			<img src="imgs/common_min_01.jpg">&nbsp&nbsp&nbsp&nbsp
-			<img src="imgs/common_min_02.jpg">&nbsp&nbsp&nbsp&nbsp
-			<img src="imgs/common_min_03.jpg">&nbsp&nbsp&nbsp&nbsp		
-			<a>登录&nbsp&nbsp&nbsp&nbsp</a>
-			<a>注册&nbsp&nbsp&nbsp&nbsp</a>
-			<img src="imgs/common_min_04.jpg">
-			<a>消息&nbsp&nbsp&nbsp&nbsp</a>
-			<img src="imgs/dingdan.jpg">
-			<a>我的订单&nbsp&nbsp&nbsp&nbsp</a>
-			<a>我的收藏&nbsp&nbsp&nbsp&nbsp</a>
-			<a>帮钻兑换&nbsp&nbsp&nbsp&nbsp</a>
-			<img src="imgs/tp-my-phone.png">
-			<a>手机版&nbsp&nbsp&nbsp&nbsp</a>
-			<a>帮5淘&nbsp&nbsp&nbsp&nbsp</a>
-			<a>客户服务&nbsp&nbsp&nbsp&nbsp</a>
-			<img src="imgs/gouwuche.jpg">
-			<a>购物车&nbsp&nbsp</a>
-			<a style="color: #fe6c00">  o</a>
-		</div>
-		<div id="one01">
-			<img id="one001" src="imgs/logo_03.jpg">
-			<div id="one010">
-				<input type="text" name="search" style="width: 497px;height: 34px;border: 3px solid #fe6c00;color: #74736d;outline: none;float: left;" value="输入商品网址或关键词，直通全网，快速帮5购！">
-				<input id="search" value="搜全网" style="text-align: center; width: 78px;height: 40px;border: none; outline: none;font-size: 16px; background-color: #fe6c00;float: left;color: #fff">
-				<div id="one0000">
-					<div id="oo111">
-						<img src="imgs/common_min_16.jpg">
-						<a>400-085-0505</a>
-					</div>			
-					<div id="oo222">
-						<img src="imgs/common_min_04.jpg">
-						<a>mc@b5m.com</a>
-					</div>
-					<div id="oo333">
-						<img src="imgs/wenhao.jpg">
-						<a>常见问题</a>	
+			<a style="color: #9a9791;font-size: 12px;">帮5买，享帮帮</a>
+			<div id="one00">
+				<img src="imgs/common_min_01.jpg">&nbsp&nbsp&nbsp&nbsp
+				<img src="imgs/common_min_02.jpg">&nbsp&nbsp&nbsp&nbsp
+				<img src="imgs/common_min_03.jpg">&nbsp&nbsp&nbsp&nbsp		
+				<a>登录&nbsp&nbsp&nbsp&nbsp</a>
+				<a>注册&nbsp&nbsp&nbsp&nbsp</a>
+				<img src="imgs/common_min_04.jpg">
+				<a>消息&nbsp&nbsp&nbsp&nbsp</a>
+				<img src="imgs/dingdan.jpg">
+				<a>我的订单&nbsp&nbsp&nbsp&nbsp</a>
+				<a>我的收藏&nbsp&nbsp&nbsp&nbsp</a>
+				<a>帮钻兑换&nbsp&nbsp&nbsp&nbsp</a>
+				<img src="imgs/tp-my-phone.png">
+				<a>手机版&nbsp&nbsp&nbsp&nbsp</a>
+				<a>帮5淘&nbsp&nbsp&nbsp&nbsp</a>
+				<a>客户服务&nbsp&nbsp&nbsp&nbsp</a>
+				<img src="imgs/gouwuche.jpg">
+				<a>购物车&nbsp&nbsp</a>
+				<a style="color: #fe6c00">  o</a>
+			</div>
+			<div id="one01">
+				<img id="one001" src="imgs/logo_03.jpg">
+				<div id="one010">
+					<input type="text" name="search" style="width: 497px;height: 34px;border: 3px solid #fe6c00;color: #74736d;outline: none;float: left;" value="输入商品网址或关键词，直通全网，快速帮5购！">
+					<input id="search" value="搜全网" style="text-align: center; width: 78px;height: 40px;border: none; outline: none;font-size: 16px; background-color: #fe6c00;float: left;color: #fff">
+					<div id="one0000">
+						<div id="oo111">
+							<img src="imgs/common_min_16.jpg">
+							<a>400-085-0505</a>
+						</div>			
+						<div id="oo222">
+							<img src="imgs/common_min_04.jpg">
+							<a>mc@b5m.com</a>
+						</div>
+						<div id="oo333">
+							<img src="imgs/wenhao.jpg">
+							<a>常见问题</a>	
+						</div>
 					</div>
 				</div>
-			</div>
-			<div id="one02">
-				<a id="one021">&nbsp&nbsp洗发护发&nbsp</a>
-				<a id="one1">|</a>
-				<a id="one021">&nbsp日本纸尿裤&nbsp</a>
-				<a id="one1">|</a>
-				<a id="one022">&nbsp身体乳&nbsp</a>
-				<a id="one1">|</a>
-				<a id="one022">&nbsp内衣文胸&nbsp</a>
-				<a id="one1">|</a>
-				<a id="one023">&nbspiPone 6s&nbsp</a>
-				<a id="one1">|</a>
-				<a id="one023">&nbspiPad Air2&nbsp</a>
-				<a id="one1">|</a>
-				<a id="one022">&nbsp牛仔裤&nbsp</a>
-				<a id="one1">|</a>
-				<a id="one022">&nbsp奶粉&nbsp</a>
-				<a id="one1">|</a>
-				<a id="one022">&nbsp防晒霜&nbsp</a>
-				<a id="one1">|</a>
-				<a id="one022">&nbsp伞</a>
+				<div id="one02">
+					<a id="one021">&nbsp&nbsp洗发护发&nbsp</a>
+					<a id="one1">|</a>
+					<a id="one021">&nbsp日本纸尿裤&nbsp</a>
+					<a id="one1">|</a>
+					<a id="one022">&nbsp身体乳&nbsp</a>
+					<a id="one1">|</a>
+					<a id="one022">&nbsp内衣文胸&nbsp</a>
+					<a id="one1">|</a>
+					<a id="one023">&nbspiPone 6s&nbsp</a>
+					<a id="one1">|</a>
+					<a id="one023">&nbspiPad Air2&nbsp</a>
+					<a id="one1">|</a>
+					<a id="one022">&nbsp牛仔裤&nbsp</a>
+					<a id="one1">|</a>
+					<a id="one022">&nbsp奶粉&nbsp</a>
+					<a id="one1">|</a>
+					<a id="one022">&nbsp防晒霜&nbsp</a>
+					<a id="one1">|</a>
+					<a id="one022">&nbsp伞</a>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div id="black">
+		<div id="black1">
+			<div id="bone">首页</div>
+			<div id="btwo"  style="margin-left: 45px;">热门品牌</div>
+			<div id="btwo">美妆个户</div>
+			<div id="btwo">服饰鞋包</div>
+			<div id="btwo">母婴鞋包</div>
+			<div id="btwo">食品保健</div>
+			<div id="btwo">韩国直邮</div>
+			<div id="btwo">跨境购</div>
+		</div>
+	</div>
+	<div id="two">
+		<div id="two01">
+			<a>首页>美容护肤/美体/精油>防晒>韩国 RE:CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</a>
+			<div id="two2">
+				<div id="two21">
+					<img src="imgs/pp0.jpeg"/ id="pp0" style="display: block;">
+					<img src="imgs/pp1.jpeg"/ id="pp1" style="display:none;">
+					<div id="slider"></div>
+				</div>
+			</div>
+		<div id="photo">
+				<img src="imgs/a_07.jpg">
+			</div>
+		</div>
 	</div>
 		<div id="three">
 			<div id="three01">
